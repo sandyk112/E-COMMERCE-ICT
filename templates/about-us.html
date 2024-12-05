@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>ETSY shop - About-us</title>
+    {% load static %}
+    
+    <!-- Font awesome -->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+
+        <!-- Main style sheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">    
+        
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">   
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="{% static 'css/jquery.smartmenus.bootstrap.css' %}" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.simpleLens.css' %}">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nouislider.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+    <!-- Theme color -->
+    <link id="switcher" href="{% static 'css/theme-color/default-theme.css' %}" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="{% static 'css/sequence-theme.modern-slide-in.css'%}" rel="stylesheet" media="all">
+
+  </head>
+  <body>     
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">    
+
+<div class="aa-header-bottom">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="aa-header-bottom-area">
+            	<div class="col-lg-1 col-md-2 col-sm-2 col-xs-4 text-center">
+					<div class="aa-logo text-center"><a href="index.html"><img src="{% static 'img/logo.png' %}" width="100%"></a></div>
+                </div>
+               <!-- cart box -->
+			    
+			  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8">
+              <div class="address-home">
+			  <p class="address"><a href="#"><i class="fa fa-map-marker"></i> <span>Hello</span>Select your address</a></p>
+			  </div>
+			  </div>			  
+               
+               
+               <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+               <div class="aa-checkout-single-bill">
+                                          <select>
+                                  <option value="0">All</option>
+                                  <option value="1">Australia</option>
+                                  <option value="2">Afganistan</option>
+                                  <option value="3">Bangladesh</option>
+                                  <option value="4">Belgium</option>
+                                  <option value="5">Brazil</option>
+                                  <option value="6">Canada</option>
+                                  <option value="7">China</option>
+                                  <option value="8">Denmark</option>
+                                  <option value="9">Egypt</option>
+                                  <option value="10">India</option>
+                                  <option value="11">Iran</option>
+                                  <option value="12">Israel</option>
+                                  <option value="13">Mexico</option>
+                                  <option value="14">UAE</option>
+                                  <option value="15">UK</option>
+                                  <option value="16">USA</option>
+                                </select>
+                             
+               </div>
+			   
+               <div class="aa-search-box">
+                <form action="">
+                
+                  <input type="text" name="" id="" placeholder="Search for products, brands and more...">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              
+              </div>
+              
+              
+              <div class="col-lg-4 col-md-12 col-sm-3 col-xs-8 last-nav">
+			  <div class="login-btn">
+			  <ul>
+			  <li><a href="#"><span>Hello, Sign in</span>Account & Lists <i class="fa fa-angle-down"></i></a></li>
+			  <li><a href="#"><span>Returns</span> & Orders</a></li>
+			  </ul>
+			  </div>
+                
+              
+              <div class="aa-cartbox col-xs-4">
+			  
+                <a class="aa-cart-link" href="#">
+				  <span id="count">1</span>
+                  <span><img src="{% static 'img/icon.png' }" class="img-fluid"> Cart</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="{% static 'img/man/polo-shirt-2.png' %} " alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="{% static 'img/man/polo-shirt-3.png' %}" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Product Name</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>                    
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Total
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+                </div>
+              </div>
+              <!-- / cart box -->
+
+              <!-- search box -->
+              
+              <!-- / search box -->             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header><!-- / header section -->
+  <section class="mega_nav">
+    <div class="container-fluid nav-container">
+      <!-- Static navbar -->
+      <div class="navbar navbar-static-top" role="navigation">
+          <div class="row">
+          <div class="container-fluid">
+            <div class="col-lg-12 col-xs-12">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <!--          <a class="navbar-brand" href="#">Project name</a>-->
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+				<li class="menu-large">
+				<a href="index.html">Home</a>
+				</li>
+				<li class="menu-large">
+				<a href="about-us.html">About Us</a>
+				</li>
+                    <li class="dropdown menu-large">
+                        <a href="personal-care.html" class="dropdown-toggle" data-toggle="dropdown">Personal Care</a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <h4 class="foot_sec">Baby Care & Food</h4>
+                                    <li><a href="#">Huggies</a></li>
+                                    <li><a href="#">Johnson Baby Cream</a></li>
+                                    <li><a href="#">Nestle Ceregrow</a></li>
+                                    <li><a href="#">Pampers</a></li>
+                                    <li><a href="#">Johnson's Vitamin E Oil</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <h4>Hair Care</h4>
+                                    <li><a href="#">Clinic Plus Shampoo</a></li>
+                                    <li><a href="#">Dove Conditioner</a></li>
+                                    <li><a href="#">Garnier Color</a></li>
+                                    <li><a href="#">Head & Shoulder Shampoo</a></li>
+									<li><a href="#">Himalaya Gel</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                              <ul>
+                                <h4>Handwash & Sanitizer</h4>
+                                <li><a href="#">Dettol</a></li>
+                                <li><a href="#">Himalaya Pure Hands</a></li>
+                                <li><a href="#">Lifebouy Total </a></li>
+                                <li><a href="#">Savlon</a></li>
+								<li><a href="#">Patanjali</a></li>
+                            </ul>
+                            </li>
+                            <li class="col-sm-3">
+                              <ul>
+                                <h4>Skin Care</h4>
+                                <li><a href="#">Dabur Gulabari</a></li>
+                                <li><a href="#">Fair and Handsome</a></li>
+                                <li><a href="#">Garnier Facewash</a></li>
+                                <li><a href="#">Nivea Lip Balm</a></li>
+								<li><a href="#">Veet Hair Removal</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+                    <li class="dropdown menu-large">
+                      <a href="men.html" class="dropdown-toggle" data-toggle="dropdown"> Men</a>
+                      <ul class="dropdown-menu megamenu row">
+                        <li class="col-sm-3">
+                            <ul>
+                                <h4 class="foot_sec">Topwear</h4>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Casual Shirts</a></li>
+                                <li><a href="#">Sweaters</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Suits</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <h4>Bottomwear</h4>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Trousers</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Joggers</a></li>
+							<li><a href="#">Track Pants</a></li>
+                        </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <h4>Footwear</h4>
+                            <li><a href="#">Flip Flops</a></li>
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Sandals</a></li>
+                            <li><a href="#">Socks</a></li>
+							<li><a href="#">Shoes</a></li>
+                        </ul>
+                        </li>
+						<li class="col-sm-3">
+                          <ul>
+                            <h4>Fashion Accessories</h4>
+                            <li><a href="#">Wallets</a></li>
+                            <li><a href="#">Belts</a></li>
+                            <li><a href="#">Trimmers</a></li>
+                            <li><a href="#">Deodrants</a></li>
+							<li><a href="#">Caps</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                  </li>
+
+
+
+
+                  <li class="dropdown menu-large">
+                    <a href="women.html" class="dropdown-toggle" data-toggle="dropdown"> Women</a>
+                    <ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4 class="foot_sec">Western Wear</h4>
+                              <li><a href="#">Dresses</a></li>
+                              <li><a href="#">Tops</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Shrugs</a></li>
+                              <li><a href="#">Jumpsuits</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4>Footwear</h4>
+                              <li><a href="#">Flats</a></li>
+                              <li><a href="#">Heels</a></li>
+                              <li><a href="#">Boots</a></li>
+                              <li><a href="#">Floaters</a></li>
+							  <li><a href="#">Casual Shoes</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Beauty & Personal Care</h4>
+                          <li><a href="#">Makeup</a></li>
+                          <li><a href="#">Skincare</a></li>
+                          <li><a href="#">Lipsticks</a></li>
+                          <li><a href="#">Fragrances</a></li>
+						  <li><a href="#">Premium Beauty</a></li>
+                      </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Indian Wear</h4>
+                          <li><a href="#">Kurtas & Suits</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Sarees</a></li>
+                          <li><a href="#">Plazzos</a></li>
+						  <li><a href="#">Lehanga</a></li>
+                      </ul>
+                      </li>
+                  </ul>
+                </li>
+				
+				<li class="dropdown menu-large">
+                    <a href="kid.html" class="dropdown-toggle" data-toggle="dropdown"> Kid</a>
+                    <ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4 class="foot_sec">Boys Clothing</h4>
+                              <li><a href="#">T-Shirts</a></li>
+                              <li><a href="#">Shirts</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Shorts</a></li>
+                              <li><a href="#">Trousers</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4>Girls Clothing</h4>
+                              <li><a href="#">Dresses</a></li>
+                              <li><a href="#">Tops</a></li>
+                              <li><a href="#">Tshirts</a></li>
+                              <li><a href="#">Skirts</a></li>
+							  <li><a href="#">Jumpsuits</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Boys Footwear</h4>
+                          <li><a href="#">Casual Shoes</a></li>
+                          <li><a href="#">Sports Shoes</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flip Flops</a></li>
+						  <li><a href="#">School Shoes</a></li>
+                      </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Girls Footwear</h4>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Casual Shoes</a></li>
+                          <li><a href="#">Heels</a></li>
+                          <li><a href="#">Sandals</a></li>
+						  <li><a href="#">School Shoes</a></li>
+                      </ul>
+                      </li>
+                  </ul>
+                </li>
+				
+				<li class="dropdown menu-large">
+                    <a href="beauty-care.html" class="dropdown-toggle" data-toggle="dropdown"> Beauty Care</a>
+                    <ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4 class="foot_sec">Makeup</h4>
+                              <li><a href="#">Lipstick</a></li>
+                              <li><a href="#">Gloss</a></li>
+                              <li><a href="#">Liner</a></li>
+                              <li><a href="#">Kajal</a></li>
+                              <li><a href="#">Foundation</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4>Skincare</h4>
+                              <li><a href="#">Sunscream</a></li>
+                              <li><a href="#">Face Wash</a></li>
+                              <li><a href="#">Body Scrup</a></li>
+                              <li><a href="#">Lip Balm</a></li>
+							  <li><a href="#">Cleanser</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Haircare</h4>
+                          <li><a href="#">Shampoo</a></li>
+                          <li><a href="#">Conditioner</a></li>
+                          <li><a href="#">Oil</a></li>
+                          <li><a href="#">Serum</a></li>
+						  <li><a href="#">Gel</a></li>
+                      </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Fragrances</h4>
+                          <li><a href="#">Perfume</a></li>
+                          <li><a href="#">Deodrants</a></li>
+                          <li><a href="#">Body Mist</a></li>
+                          <li><a href="#">Scents</a></li>
+                      </ul>
+                      </li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown menu-large">
+                    <a href="grocery.html" class="dropdown-toggle" data-toggle="dropdown"> Grocery</a>
+                    <ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4 class="foot_sec">Staples</h4>
+                              <li><a href="#">Pulses</a></li>
+                              <li><a href="#">Oil</a></li>
+                              <li><a href="#">Flours</a></li>
+                              <li><a href="#">Spices</a></li>
+                              <li><a href="#">Dry Fruits</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4>Skincare</h4>
+                              <li><a href="#">Sunscream</a></li>
+                              <li><a href="#">Face Wash</a></li>
+                              <li><a href="#">Body Scrup</a></li>
+                              <li><a href="#">Lip Balm</a></li>
+							  <li><a href="#">Cleanser</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Snacks & Beverages</h4>
+                          <li><a href="#">Buscuits</a></li>
+                          <li><a href="#">Chips</a></li>
+                          <li><a href="#">Juices</a></li>
+                          <li><a href="#">Tea & Coffee</a></li>
+						  <li><a href="#">Soft Drinks</a></li>
+                      </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Packaged Food</h4>
+                          <li><a href="#">Noodles</a></li>
+                          <li><a href="#">Ketchups</a></li>
+                          <li><a href="#">Chocolates</a></li>
+                          <li><a href="#">Pickles</a></li>
+						  <li><a href="#">Breakfast Cereals</a></li>
+                      </ul>
+                      </li>
+                  </ul>
+                </li>
+				
+				<li class="dropdown menu-large">
+                    <a href="home-kitchen.html" class="dropdown-toggle" data-toggle="dropdown"> Home & Kitchen</a>
+                    <ul class="dropdown-menu megamenu row">
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4 class="foot_sec">Storage & Containers</h4>
+                              <li><a href="#">Plastic Container</a></li>
+                              <li><a href="#">Bottle</a></li>
+                              <li><a href="#">Jars</a></li>
+                              <li><a href="#">Baskets</a></li>
+                              <li><a href="#">Canisters</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                          <ul>
+                              <h4>Kitchen Tools</h4>
+                              <li><a href="#">Steel Knife</a></li>
+                              <li><a href="#">Gas Lighter</a></li>
+                              <li><a href="#">Vegetable Grater</a></li>
+                              <li><a href="#">Masher</a></li>
+							  <li><a href="#">Strainer</a></li>
+                          </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Kitchenware</h4>
+                          <li><a href="#">Juicer</a></li>
+                          <li><a href="#">Chilly Cutter</a></li>
+                          <li><a href="#">Slicer</a></li>
+                          <li><a href="#">Chopper</a></li>
+						  <li><a href="#">Sansi</a></li>
+                      </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <h4>Household Essentials</h4>
+                          <li><a href="#">Cube Tray</a></li>
+                          <li><a href="#">Trivet</a></li>
+                          <li><a href="#">Pen Stands</a></li>
+                          <li><a href="#">Key Chains</a></li>
+						  <li><a href="#">Charger Stand</a></li>
+                      </ul>
+                      </li>
+                  </ul>
+                </li>
+				
+				
+				
+
+				<li class="menu-large">
+				<a href="contact-us.html">Contact Us</a>
+				</li>
+
+
+                   
+
+                </ul>
+
+
+            </div><!--/.nav-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+  </section>
+
+<div class="clearfix"></div>
+    <section style="background-color: #f5f5f5;">
+    <div class="container">
+		<ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>         
+              <li class="active">About Us </li>
+		</ol>
+	</div>
+    </section>
+  
+  
+ <section class="about_us">
+   <div class="container">
+     <div class="row">
+    
+     	<div class="col-lg-12 col-xs-12"><h2>About ETSY</h2></div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        	
+            <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </p>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img src="{% static 'img/gy.jpg' %}" class="img-responsive"></div>
+     </div>
+   
+   
+   
+   
+     <div class="row">
+     	<div class="col-lg-12 col-xs-12">
+        <h2>Our Vission</h2>
+        <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </p>
+        
+        
+        <h2>Our Mission</h2>
+        <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </p>
+        
+         <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </p>
+            
+             <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        
+        </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+  <!-- footer -->  
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+     <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-top-area">
+            <div class="row">
+              <div class="col-md-2 col-sm-6">
+                <div class="aa-footer-widget">
+                  <h3>Policy Info</h3>
+                  <ul class="aa-footer-nav">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Sale</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Company</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="#">In the News</a></li>
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-2 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Business</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="#">Affiliate Partners</a></li>
+                      <li><a href="#">EMI</a></li>
+                      <li><a href="#">Bulk Order</a></li>
+                      <li><a href="#">Become a Distributor</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Help</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Payment Options</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Our Newsletter</h3>
+                    <p>Subscribe to our newsletter and get information about our latest offers and prices.</p>
+                     <form action="" class="aa-subscribe-form">
+                          <input type="email" name="" id="" placeholder="Enter your Email">
+                   
+                          <button type="submiit"  class="btn btn-dark"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    <div class="aa-footer-social">
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                      <a href="#"><span class="fa fa-youtube"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <!-- footer-bottom -->
+    <div class="aa-footer-bottom">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-bottom-area">
+            <p>© Copyright ETSY Shop. All Rights Reserved</p>
+            <div class="aa-footer-payment">
+              <span class="fa fa-cc-mastercard"></span>
+              <span class="fa fa-cc-visa"></span>
+              <span class="fa fa-paypal"></span>
+              <span class="fa fa-cc-discover"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+ <!-- Login Modal -->  
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">                      
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Login or Register</h4>
+          <form class="aa-login-form" action="">
+            <label for="">Username or Email address<span>*</span></label>
+            <input type="text" placeholder="Username or email">
+            <label for="">Password<span>*</span></label>
+            <input type="password" placeholder="Password">
+            <div class="clearfix"></div>
+            <div class="text-center" style="width:100%">
+                                        <center><p class="log_in"><a href="#" class="link">Login in with</a></p></center>
+                                    </div>
+                                    
+                                    <div class="social-login mb-3">
+                                                    <ul>
+                                                        <li><a href="#" class="btn connect-fb"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                                        <li><a href="#" class="btn connect-google"><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="login_btn"><a href="#" class="btn btn-blue blue-hover">Login In</a></div>
+                                    
+            
+
+            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+            <div class="aa-register-now">
+              Don't have an account?<a href="register.html">Register now!</a>
+            </div>
+          </form>
+        </div>                        
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>   
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/jquery.smartmenus.js' %}"></script>
+  <script src="{% static 'js/jquery.smartmenus.bootstrap.js' %}"></script>
+  <script src="{% static 'js/sequence.js' %}"></script>
+  <script src="{% static 'js/sequence-theme.modern-slide-in.js' %}"></script>
+  <script src="{% static 'js/jquery.simpleGallery.js' %}"></script>
+  <script src="{% static 'js/jquery.simpleLens.js' %}"></script>
+  <script src="{% static 'js/slick.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/owl.carousel.js'%}"></script>
+  <script src="{% static 'js/nouislider.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>
